@@ -1,6 +1,8 @@
 # Hugo configuration file
 title: Apuntes UNED
 description: "Apuntes Derecho UNED"
+baseURL: "https://apuntesderechouned.com"
+enableRobotsTXT: true
 
 languageCode: es-ES
 defaultContentLanguage: es
