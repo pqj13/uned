@@ -1,5 +1,15 @@
 # Hugo configuration file
-title: My Site
+title: Apuntes UNED
+description: "Apuntes Derecho UNED"
+
+languageCode: es-ES
+defaultContentLanguage: es
+defaultContentLanguageInSubdir: false
+
+languages:
+  es:
+    languageName: Español
+    weight: 1
 
 # import hextra as module
 module:
@@ -18,39 +28,37 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    - name: Apuntes
+      pageRef: /apuntes
       weight: 1
-    - name: About
+    - name: Información
       pageRef: /about
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+    - name: Buscar
       weight: 3
-    - name: Search
-      weight: 4
       params:
         type: search
-    - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
-      params:
-        icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
+  description: "Apuntes Derecho UNED"
+
   navbar:
     displayTitle: true
     displayLogo: false
 
   footer:
     displayCopyright: false
-    displayPoweredBy: true
+    displayPoweredBy: false
 
   editURL:
+    enable: false
+
+  search:
     enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content, summary
+      index: content
+      # forward, reverse, full - https://github.com/nextapps-de/flexsearch#tokenizer
+      tokenize: forward

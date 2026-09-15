@@ -1,17 +1,22 @@
 ---
-title: My Site
+title: ""
+description: "Apuntes Derecho UNED"
 toc: false
 ---
+<div class="hx:mt-6 hx:mb-6">
+{{< hextra/hero-headline >}}
+  Apuntes Grado en Derecho UNED
+{{< /hextra/hero-headline >}}
+</div>
 
-This is the landing page.
+<div class="hx:mb-12">
+{{< hextra/hero-subtitle >}}
+  Apuntes de estudio del Grado en Derecho de la UNED,&nbsp;<br class="hx:sm:block hx:hidden" />organizados por asignatura y tema, con buscador integrado.
+{{< /hextra/hero-subtitle >}}
+</div>
 
-## Explore
+<div class="hx:mb-6">
+{{< hextra/hero-button text="Apuntes" link="apuntes" >}}
+</div>
 
-{{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
-{{< /cards >}}
-
-## Documentation
-
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+<div class="hx:mt-16"></div>
